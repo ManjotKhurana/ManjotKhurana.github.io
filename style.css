@@ -60,7 +60,7 @@ body{
 }
 .slider-area .carousel-inner .carousel-item img{
     object-fit: fill;
-    height: 90vh;
+    height: 88vh;
 }
 .carousel-caption{
     top:60%
