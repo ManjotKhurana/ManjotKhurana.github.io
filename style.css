@@ -55,8 +55,11 @@ body{
     background-color: #0055a5;
     opacity: 0;
 }
+.carousel-inner {
+    height: 85vh!important;
+}
 .slider-area .carousel-inner .carousel-item img{
-    object-fit: cover;
+    object-fit: fill;
     height: 85vh;
 }
 .carousel-caption{
@@ -191,7 +194,13 @@ footer{
 .heading-1{
     text-align: center;
     color: white;
-    padding: 2rem;
+    font-style: italic;
+    padding: 2rem 2rem .5rem 2rem;
+}
+.quote-writer{
+    color: white;
+    font-style: italic;
+    padding: 0 2rem 1rem 2rem;
 }
 /*---End Quotes---*/
 
@@ -326,7 +335,7 @@ textarea {
 }
 .btn-start-order {
   /* background: 0 0 #ffffff; */
-  background-color: #2b38a2;
+    background-color: #2b38a2;
     border: 1px solid #2f323a;
     width: -webkit-fill-available;
     border-radius: 3px;
@@ -411,5 +420,16 @@ textarea {
 @media (max-width: 1370px){
     .content-text{
         top: 35%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .modal-lg {
+      max-width: 750px; 
+    }
+}
+@media screen and (min-width: 992px) {
+    .modal-lg {
+      max-width: 920px; 
     }
 }
