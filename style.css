@@ -56,11 +56,11 @@ body{
     opacity: 0;
 }
 .carousel-inner {
-    height: 65vh!important;
+    height: 75vh!important;
 }
 .slider-area .carousel-inner .carousel-item img{
     object-fit: fill;
-    height: 65vh;
+    height: 75vh;
 }
 .carousel-caption{
     top:60%
@@ -369,6 +369,7 @@ textarea {
 .popoup-text{
     color: #0055a5;
     line-height: 1.7rem;
+    text-justify: center;
 }
 /*---end contact---*/
 
