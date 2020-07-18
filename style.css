@@ -56,11 +56,11 @@ body{
     opacity: 0;
 }
 .carousel-inner {
-    height: 88vh!important;
+    height: 65vh!important;
 }
 .slider-area .carousel-inner .carousel-item img{
     object-fit: fill;
-    height: 88vh;
+    height: 65vh;
 }
 .carousel-caption{
     top:60%
