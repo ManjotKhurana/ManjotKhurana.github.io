@@ -59,14 +59,14 @@ body{
     opacity: 0;
 }
 .carousel-inner {
-    height: 80vh!important;
+    height: auto!important;
 }
 .slider-area .carousel-inner .carousel-item img{
-    object-fit: fill;
-    height: 80vh;
+    object-fit: cover;
+    height: auto;
 }
 .carousel-caption{
-    top:60%
+    top:60%;
 }
 
 /*---about section---*/
@@ -120,73 +120,6 @@ footer{
     color: white;
 }
   
-#projects{
-    padding: 5rem;
-}
-.img-prj{
-    padding: 1rem;
-}
-.image-fluid{
-    padding: 0 !important;
-}
-
-.filter-button
-{
-    font-size: 18px;
-    /* border-bottom: 1px solid #0055a5; */
-    /* border-radius: 5px; */
-    text-align: center;
-    color: #0055a5;
-    margin-bottom: 30px;
-
-}
-.prj{
-    padding: 7px;
-}
-.filter-button:hover
-{
-    font-size: 18px;
-    /* border: 1px solid #42B32F; */
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #0055a5;
-
-}
-.btn-default:active .filter-button:active
-{
-    background-color: #0055a5;
-    color: white;
-}
-
-.port-image
-{
-    width: 100%;
-}
-.custom-overlay{
-    position: absolute;
-    top:0rem;
-    bottom: 0rem;
-    left: 0rem;
-    right: 0rem;
-    margin: 1rem;
-    text-align: center;
-    background: linear-gradient(to right bottom, rgba(16,29,44,1) , rgba(28, 44, 155,0.8));
-    opacity: 0;
-    transition: all 400ms ease-in-out;
-}
-.content-text{
-    position: absolute;
-    top: 45%;
-    left: 1rem;
-    right: 1rem;
-}
-.content-text h4{
-    color: #fff;
-}
-.custom-overlay:hover{
-    opacity: 1;
-}
 
 /*---Quotes---*/
 #quotes{
@@ -377,9 +310,81 @@ textarea {
 }
 /*---end contact---*/
 
+/*---Start Projects---*/
+.filters{
+    display: block;
+    width: 100%;
+    margin:0;
+    padding: 30x 0;
+}
+
+.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+.filters > li > a{
+    display: block;
+    color: #0055a5;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.filters > li > a:hover{
+    background-color: #e6e9ed;
+    border-radius: .3rem;
+}
+
+.filters > li.active > a{
+    color: #fff;
+    background-color: #0055a5;
+    border-radius: .3rem;
+}
+.card-head{
+    position: relative;
+}
 .card{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+}
+
+.card-body{
     display: none;
 }
+.item{
+    padding: 1rem;
+}
+.image-fluid{
+    padding: 0 !important;
+}
+.card-hover{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom, rgba(16,29,44,1) , rgba(28, 44, 155,0.8));
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+
 @media (max-width: 576px){
     .img-prj{
         padding-left: 2rem;
@@ -397,7 +402,14 @@ textarea {
     .custom-overlay{
         display: none;
     }
-    .img-prj{
+    .card-body{
+        display: flex;
+        text-align: center;
+    }
+    .card-hover{
+        display: none;
+    }
+    /* .img-prj{
         display: none;
     }
     .card{
@@ -407,7 +419,7 @@ textarea {
     .card-title{
         text-align: center;
         color: #0055a5;
-    }
+    } */
 }
 
 @media (max-width: 990px){
