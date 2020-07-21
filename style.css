@@ -79,32 +79,44 @@ body{
     font-weight: bold;
     text-shadow: .1rem .1rem .8rem black;
     padding-bottom: 1rem;
-    /* letter-spacing: .3rem; */
+    letter-spacing: .3rem;
 }
 .carousel-caption h4{
     font-size: 1.8rem;
     font-style: italic;
-    text-shadow: .1rem .1rem .8rem black;
-    padding-bottom: 1rem;
-    /* letter-spacing: .3rem; */
+    text-shadow: .1rem .1rem .8rem black; 
 }
-
+.carousel-indicators{
+    z-index: 100;
+}
 
 .carousel-indicators .active{
     background-color: #0055a5;
 }
-/* .box{
-    width: 60%;
-    padding: 30px;
+.box{
+    width: 50%;
+    padding: 3rem;
     position: absolute;
     z-index: 30;
     color: #fff;
+    background: rgba(0,0,0,.7);
     font-size: 5rem;
-    
-    left: 20%;
-    text-align: center;
+    top: 30%;
+    left: 0;
     text-shadow: 4px 4px #000;
-} */
+}
+.box h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: .8rem;
+}
+
+.box h4{
+    font-size: 1.2rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
 
 /*---about section---*/
 
@@ -426,7 +438,15 @@ textarea {
         top: 35%;
     }
 }
-
+@media (max-width: 1082px){
+    .box h2{
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
+    }
+    .box h4{
+        font-size: .8rem;
+    }
+}
 @media screen and (min-width: 992px) {
     .modal-lg {
       max-width: 920px; 
@@ -453,7 +473,18 @@ textarea {
         font-size: 1.3rem;
     }
 }
-
+@media (max-width: 848px){
+    .box{
+        padding: 2rem;
+    }
+    .box h2{
+        font-size: 1rem;
+        padding-bottom: .4rem;
+    }
+    .box h4{
+        font-size: .8rem;
+    }
+}
 @media (max-width: 744px){
     html{
         font-size: 85%;
@@ -480,9 +511,20 @@ textarea {
     .carousel-caption h4{
         font-size: 1rem;
     }
-    
 }
 
+@media (max-width: 666px){
+    .box{
+        padding: 1rem;
+    }
+    .box h2{
+        font-size: .6rem;
+        padding-bottom: .2rem;
+    }
+    .box h4{
+        font-size: .3rem;
+    }
+}
 @media (max-width: 576px){
     html{
         font-size: 50%;
@@ -504,5 +546,17 @@ textarea {
 @media screen and (min-width: 576px) {
     .modal-lg {
       max-width: 750px; 
+    }
+}
+@media (max-width: 464px){
+    .box{
+        padding: .2rem;
+    }
+    .box h2{
+        font-size: .3rem;
+        padding-bottom: 0rem;
+    }
+    .box h4{
+        font-size: .2rem;
     }
 }
