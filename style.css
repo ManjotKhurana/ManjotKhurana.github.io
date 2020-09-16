@@ -55,8 +55,6 @@ body{
     width: 100%;
     height: 100%;
     z-index: 2;
-    /* background-color: #0055a5;
-    opacity: 0.5; */
     background-color: rgba(0, 0, 0, 0.4);
 }
 .carousel-inner {
@@ -319,7 +317,6 @@ textarea {
 	color: #0055a5;
 }
 .btn-start-order {
-  /* background: 0 0 #ffffff; */
     background-color: #2b38a2;
     border: 1px solid #2f323a;
     width: -webkit-fill-available;
