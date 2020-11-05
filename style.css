@@ -145,6 +145,13 @@ body{
     background-color: #0055a5;
     margin: 0 auto 3rem;
   }
+
+  .heading-underline-1{
+    width: 15rem;
+    height: .2rem;
+    background-color: #0055a5;
+    margin: 0 auto 3rem;
+  }
   .feature{
     padding: 2rem;
   }
@@ -271,7 +278,7 @@ footer{
     will-change: transform;
   }
   .fix{
-    background-image: url(img/prj1.jpg);
+    background-image: url(projects/carleton-university-twin-pad-arena.jpg);
     z-index: -1;
   }
   .dark{
