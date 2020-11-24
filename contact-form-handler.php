@@ -31,8 +31,8 @@
         else{        
             $from="From: $name<$email>\r\nReturn-path: $email";
             $subject="Message sent using your contact form";
-            mail("nikk409@gmail.com", $subject, $message, $from);
-            echo "Email sent!";
+            mail("manjot@mbc.ca", $subject, $message, $from);
+            header("Location: index.html#contact");
             }
         
 ?>

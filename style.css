@@ -489,6 +489,7 @@ textarea {
 }
 
 .team-col h3{
+    font-size: 1.75rem;
     margin-top: 15px;
     color: #0055a5;
     font-weight: bold;
@@ -498,6 +499,39 @@ textarea {
     font-style: italic;
     font-weight: bold;
 }
+@media (max-width: 1538px){
+    .team-col h3{
+        font-size: 1.5rem;
+    }
+    .team-col h5{
+        font-size: 1rem;
+    }
+    .team-col p{
+        font-size: 75%;
+    }
+}
+@media (max-width: 1202px){
+    .team-col h3{
+        font-size: 1.25rem;
+    }
+    .team-col h5{
+        font-size: .75rem;
+    }
+    .team-col p{
+        font-size: 60%;
+    }
+}
+@media (max-width: 974px){
+    .team-col h3{
+        font-size: 1rem;
+    }
+    .team-col h5{
+        font-size: .5rem;
+    }
+    .team-col p{
+        font-size: 45%;
+    }
+}
 @media (max-width: 770px){
     .team-row{
         width: 95%;
@@ -505,6 +539,15 @@ textarea {
     .team-col{
         flex-basis: 50%;
         font-size: 14px;
+    }
+    .team-col h3{
+        font-size: 1.5rem;
+    }
+    .team-col h5{
+        font-size: 1rem;
+    }
+    .team-col p{
+        font-size: 75%;
     }
 
     .team-row .team-col:nth-child(1){
@@ -532,7 +575,17 @@ textarea {
         order: 8;
     }
 }
-
+@media (max-width: 505px){
+    .team-col h3{
+        font-size: 1rem;
+    }
+    .team-col h5{
+        font-size: .5rem;
+    }
+    .team-col p{
+        font-size: 45%;
+    }
+}
 @media (max-width: 1370px){
     .content-text{
         top: 35%;
